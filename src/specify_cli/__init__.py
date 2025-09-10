@@ -64,7 +64,7 @@ BANNER = """
 ╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝        ╚═╝   
 """
 
-TAGLINE = "Spec-Driven Development Toolkit"
+TAGLINE = "Competency-Driven Assessment Toolkit"
 class StepTracker:
     """Track and render hierarchical steps without emojis, similar to Claude Code tree output.
     Supports live auto-refresh via an attached refresh callback.
@@ -277,7 +277,7 @@ class BannerGroup(TyperGroup):
 
 app = typer.Typer(
     name="specify",
-    help="Setup tool for Specify spec-driven development projects",
+    help="Setup tool for Assessment Kit competency-driven assessment projects",
     add_completion=False,
     invoke_without_command=True,
     cls=BannerGroup,
@@ -389,8 +389,8 @@ def download_template_from_github(ai_assistant: str, download_dir: Path, *, verb
     """Download the latest template release from GitHub using HTTP requests.
     Returns (zip_path, metadata_dict)
     """
-    repo_owner = "github"
-    repo_name = "spec-kit"
+    repo_owner = "safaaleigh"
+    repo_name = "spec-kit-education-competency"
     
     if verbose:
         console.print("[cyan]Fetching latest release information...[/cyan]")
@@ -406,7 +406,7 @@ def download_template_from_github(ai_assistant: str, download_dir: Path, *, verb
         raise typer.Exit(1)
     
     # Find the template asset for the specified AI assistant
-    pattern = f"spec-kit-template-{ai_assistant}"
+    pattern = f"assessment-kit-template-{ai_assistant}"
     matching_assets = [
         asset for asset in release_data.get("assets", [])
         if pattern in asset["name"] and asset["name"].endswith(".zip")
@@ -813,16 +813,16 @@ def init(
     if selected_ai == "claude":
         steps_lines.append(f"{step_num}. Open in Visual Studio Code and start using / commands with Claude Code")
         steps_lines.append("   - Type / in any file to see available commands")
-        steps_lines.append("   - Use /specify to create specifications")
-        steps_lines.append("   - Use /plan to create implementation plans")
-        steps_lines.append("   - Use /tasks to generate tasks")
+        steps_lines.append("   - Use /assess to create learning objectives")
+        steps_lines.append("   - Use /validate to create assessment frameworks")
+        steps_lines.append("   - Use /execute to generate assessment activities")
     elif selected_ai == "gemini":
         steps_lines.append(f"{step_num}. Use / commands with Gemini CLI")
-        steps_lines.append("   - Run gemini /specify to create specifications")
-        steps_lines.append("   - Run gemini /plan to create implementation plans")
+        steps_lines.append("   - Run gemini /assess to create learning objectives")
+        steps_lines.append("   - Run gemini /validate to create assessment frameworks")
         steps_lines.append("   - See GEMINI.md for all available commands")
     elif selected_ai == "copilot":
-        steps_lines.append(f"{step_num}. Open in Visual Studio Code and use [bold cyan]/specify[/], [bold cyan]/plan[/], [bold cyan]/tasks[/] commands with GitHub Copilot")
+        steps_lines.append(f"{step_num}. Open in Visual Studio Code and use [bold cyan]/assess[/], [bold cyan]/validate[/], [bold cyan]/execute[/] commands with GitHub Copilot")
 
     step_num += 1
     steps_lines.append(f"{step_num}. Update [bold magenta]CONSTITUTION.md[/bold magenta] with your project's non-negotiable principles")

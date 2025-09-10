@@ -28,23 +28,23 @@ Here are a few things you can do that will increase the likelihood of your pull 
 
 - Follow the project's coding conventions.
 - Write tests for new functionality.
-- Update documentation (`README.md,` `spec-driven.md`) if your changes affect user-facing features.
+- Update documentation (`README.md,` `assessment-driven.md`) if your changes affect user-facing features.
 - Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
 - Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
-- Test your changes with the Spec-Driven Development workflow to ensure compatibility.
+- Test your changes with the Competency-Driven Assessment workflow to ensure compatibility.
 
-## Development workflow
+## Assessment Development Workflow
 
 When working on spec-kit:
 
-1. Test changes with the `specify` CLI commands (`/specify`, `/plan`, `/tasks`) in your coding agent of choice
+1. Test changes with the `specify` CLI commands (`/assess`, `/validate`, `/execute`) in your coding agent of choice
 2. Verify templates are working correctly in `templates/` directory
 3. Test script functionality in the `scripts/` directory
 4. Ensure memory files (`memory/constitution.md`) are updated if major process changes are made
 
 ## Resources
 
-- [Spec-Driven Development Methodology](./spec-driven.md)
+- [Competency-Driven Assessment Methodology](./assessment-driven.md)
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
 - [GitHub Help](https://help.github.com)

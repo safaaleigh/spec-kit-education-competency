@@ -4,49 +4,40 @@ When amending the constitution (`/memory/constitution.md`), ensure all dependent
 
 ## Templates to Update
 
-### When adding/modifying ANY article:
-- [ ] `/templates/plan-template.md` - Update Constitution Check section
-- [ ] `/templates/spec-template.md` - Update if requirements/scope affected
-- [ ] `/templates/tasks-template.md` - Update if new task types needed
-- [ ] `/.claude/commands/plan.md` - Update if planning process changes
-- [ ] `/.claude/commands/tasks.md` - Update if task generation affected
-- [ ] `/CLAUDE.md` - Update runtime development guidelines
+### When adding/modifying ANY principle:
+- [ ] `/templates/framework-template.md` - Update Constitution Check section
+- [ ] `/templates/assessment-template.md` - Update if requirements/scope affected
+- [ ] `/templates/activities-template.md` - Update if new activity types needed
+- [ ] `/.claude/commands/validate.md` - Update if framework process changes
+- [ ] `/.claude/commands/execute.md` - Update if activity generation affected
+- [ ] `/CLAUDE.md` - Update runtime assessment guidelines
 
-### Article-specific updates:
+### Principle-specific updates:
 
-#### Article I (Library-First):
-- [ ] Ensure templates emphasize library creation
-- [ ] Update CLI command examples
-- [ ] Add llms.txt documentation requirements
+#### Principle I (Multiple Assessment Modalities):
+- [ ] Ensure templates emphasize diverse assessment methods
+- [ ] Update activity examples for different learning styles
+- [ ] Add accommodation requirement reminders
 
-#### Article II (CLI Interface):
-- [ ] Update CLI flag requirements in templates
-- [ ] Add text I/O protocol reminders
+#### Principle II (Authentic Assessment Focus):
+- [ ] Update real-world connection requirements in templates
+- [ ] Add transfer and application emphasis
+- [ ] Include relevance criteria reminders
 
-#### Article III (Test-First):
-- [ ] Update test order in all templates
-- [ ] Emphasize TDD requirements
-- [ ] Add test approval gates
+#### Principle III (Student Agency and Voice):
+- [ ] Update self-assessment requirements in all templates
+- [ ] Emphasize student choice opportunities
+- [ ] Add metacognitive reflection requirements
 
-#### Article IV (Integration Testing):
-- [ ] List integration test triggers
-- [ ] Update test type priorities
-- [ ] Add real dependency requirements
+#### Principle IV (Bias Prevention and Equity):
+- [ ] List equity check triggers
+- [ ] Update cultural responsiveness priorities
+- [ ] Add accommodation design requirements
 
-#### Article V (Observability):
-- [ ] Add logging requirements to templates
-- [ ] Include multi-tier log streaming
-- [ ] Update performance monitoring sections
-
-#### Article VI (Versioning):
-- [ ] Add version increment reminders
-- [ ] Include breaking change procedures
-- [ ] Update migration requirements
-
-#### Article VII (Simplicity):
-- [ ] Update project count limits
-- [ ] Add pattern prohibition examples
-- [ ] Include YAGNI reminders
+#### Principle V (Growth-Oriented Evaluation):
+- [ ] Add progress tracking requirements to templates
+- [ ] Include formative feedback emphasis
+- [ ] Update improvement documentation sections
 
 ## Validation Steps
 

@@ -1,11 +1,11 @@
 <div align="center">
     <img src="./media/logo_small.webp"/>
-    <h1>🌱 Spec Kit</h1>
-    <h3><em>Build high-quality software faster.</em></h3>
+    <h1>🎓 Assessment Kit</h1>
+    <h3><em>Transform educational evaluation with AI-powered assessment design.</em></h3>
 </div>
 
 <p align="center">
-    <strong>An effort to allow organizations to focus on product scenarios rather than writing undifferentiated code with the help of Spec-Driven Development.</strong>
+    <strong>An effort to allow educators to focus on authentic learning evaluation rather than traditional testing with the help of Competency-Driven Assessment.</strong>
 </p>
 
 [![Release](https://github.com/github/spec-kit/actions/workflows/release.yml/badge.svg)](https://github.com/github/spec-kit/actions/workflows/release.yml)
@@ -14,10 +14,10 @@
 
 ## Table of Contents
 
-- [🤔 What is Spec-Driven Development?](#-what-is-spec-driven-development)
+- [🤔 What is Competency-Driven Assessment?](#-what-is-competency-driven-assessment)
 - [⚡ Get started](#-get-started)
 - [📚 Core philosophy](#-core-philosophy)
-- [🌟 Development phases](#-development-phases)
+- [🌟 Assessment phases](#-assessment-phases)
 - [🎯 Experimental goals](#-experimental-goals)
 - [🔧 Prerequisites](#-prerequisites)
 - [📖 Learn more](#-learn-more)
@@ -28,84 +28,84 @@
 - [🙏 Acknowledgements](#-acknowledgements)
 - [📄 License](#-license)
 
-## 🤔 What is Spec-Driven Development?
+## 🤔 What is Competency-Driven Assessment?
 
-Spec-Driven Development **flips the script** on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: **specifications become executable**, directly generating working implementations rather than just guiding them.
+Competency-Driven Assessment **flips the script** on traditional educational evaluation. For decades, standardized testing has been king — authentic assessment was just scaffolding we built around the "real work" of measuring student performance. Competency-Driven Assessment changes this: **learning objectives become executable**, directly generating comprehensive evaluation frameworks rather than just guiding them.
 
 ## ⚡ Get started
 
-### 1. Install Specify
+### 1. Install Assessment Kit
 
-Initialize your project depending on the coding agent you're using:
+Initialize your project depending on the AI agent you're using:
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
+uvx --from git+https://github.com/safaaleigh/spec-kit-education-competency.git specify init <PROJECT_NAME>
 ```
 
-### 2. Create the spec
+### 2. Create learning objectives
 
-Use the `/specify` command to describe what you want to build. Focus on the **what** and **why**, not the tech stack.
+Use the `/assess` command to describe what competencies you want to evaluate. Focus on the **what** students should demonstrate and **why** it matters.
 
 ```bash
-/specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
+/assess Create an assessment for 9th grade students demonstrating understanding of ecosystem relationships through a biodiversity project. Students should show they can identify interdependent relationships, analyze human impact on ecosystems, and propose evidence-based conservation solutions for their local environment.
 ```
 
-### 3. Create a technical implementation plan
+### 3. Create assessment framework
 
-Use the `/plan` command to provide your tech stack and architecture choices.
+Use the `/validate` command to specify assessment methods and evaluation criteria.
 
 ```bash
-/plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
+/validate Use project-based assessment with portfolio documentation, peer evaluation, self-reflection journals, and presentation to community stakeholders. Include rubrics for scientific reasoning, evidence analysis, and communication skills.
 ```
 
 ### 4. Break down and implement
 
-Use `/tasks` to create an actionable task list, then ask your agent to implement the feature.
+Use `/execute` to create actionable assessment activities, then ask your agent to develop the complete evaluation system.
 
-For detailed step-by-step instructions, see our [comprehensive guide](./spec-driven.md).
+For detailed step-by-step instructions, see our [comprehensive guide](./assessment-driven.md).
 
 ## 📚 Core philosophy
 
-Spec-Driven Development is a structured process that emphasizes:
+Competency-Driven Assessment is a structured process that emphasizes:
 
-- **Intent-driven development** where specifications define the "_what_" before the "_how_"
-- **Rich specification creation** using guardrails and organizational principles
-- **Multi-step refinement** rather than one-shot code generation from prompts
-- **Heavy reliance** on advanced AI model capabilities for specification interpretation
+- **Learning-driven evaluation** where objectives define the "_what_" students should demonstrate before the "_how_" they're assessed
+- **Rich assessment design** using educational principles and multiple modalities
+- **Multi-step refinement** rather than one-shot test generation from prompts
+- **Heavy reliance** on advanced AI model capabilities for authentic assessment creation
 
-## 🌟 Development phases
+## 🌟 Assessment phases
 
 | Phase | Focus | Key Activities |
 |-------|-------|----------------|
-| **0-to-1 Development** ("Greenfield") | Generate from scratch | <ul><li>Start with high-level requirements</li><li>Generate specifications</li><li>Plan implementation steps</li><li>Build production-ready applications</li></ul> |
-| **Creative Exploration** | Parallel implementations | <ul><li>Explore diverse solutions</li><li>Support multiple technology stacks & architectures</li><li>Experiment with UX patterns</li></ul> |
-| **Iterative Enhancement** ("Brownfield") | Brownfield modernization | <ul><li>Add features iteratively</li><li>Modernize legacy systems</li><li>Adapt processes</li></ul> |
+| **0-to-1 Assessment** ("New Standards") | Generate from scratch | <ul><li>Start with learning standards</li><li>Generate learning objectives</li><li>Design assessment framework</li><li>Build comprehensive evaluation system</li></ul> |
+| **Creative Exploration** | Multiple assessment modalities | <ul><li>Explore diverse evaluation methods</li><li>Support multiple learning styles & backgrounds</li><li>Experiment with authentic assessment patterns</li></ul> |
+| **Iterative Enhancement** ("Existing Curriculum") | Assessment modernization | <ul><li>Add competency-based elements iteratively</li><li>Modernize traditional testing</li><li>Adapt evaluation processes</li></ul> |
 
 ## 🎯 Experimental goals
 
 Our research and experimentation focus on:
 
-### Technology independence
+### Assessment method independence
 
-- Create applications using diverse technology stacks
-- Validate the hypothesis that Spec-Driven Development is a process not tied to specific technologies, programming languages, or frameworks
+- Create evaluations using diverse assessment approaches
+- Validate the hypothesis that Competency-Driven Assessment is a process not tied to specific tools, platforms, or testing frameworks
 
-### Enterprise constraints
+### Educational constraints
 
-- Demonstrate mission-critical application development
-- Incorporate organizational constraints (cloud providers, tech stacks, engineering practices)
-- Support enterprise design systems and compliance requirements
+- Demonstrate high-stakes assessment development
+- Incorporate institutional constraints (standards, compliance, accessibility requirements)
+- Support diverse learning environments and student populations
 
-### User-centric development
+### Student-centric evaluation
 
-- Build applications for different user cohorts and preferences
-- Support various development approaches (from vibe-coding to AI-native development)
+- Build assessments for different learning styles and cultural backgrounds
+- Support various pedagogical approaches (from traditional to project-based learning)
 
 ### Creative & iterative processes
 
-- Validate the concept of parallel implementation exploration
-- Provide robust iterative feature development workflows
-- Extend processes to handle upgrades and modernization tasks  
+- Validate the concept of parallel assessment modality exploration
+- Provide robust iterative evaluation development workflows
+- Extend processes to handle curriculum updates and standards alignment  
 
 ## 🔧 Prerequisites
 
@@ -117,8 +117,8 @@ Our research and experimentation focus on:
 
 ## 📖 Learn more
 
-- **[Complete Spec-Driven Development Methodology](./spec-driven.md)** - Deep dive into the full process
-- **[Detailed Walkthrough](#detailed-process)** - Step-by-step implementation guide
+- **[Complete Competency-Driven Assessment Methodology](./assessment-driven.md)** - Deep dive into the full process
+- **[Detailed Walkthrough](#detailed-process)** - Step-by-step assessment development guide
 
 ---
 
@@ -127,7 +127,7 @@ Our research and experimentation focus on:
 <details>
 <summary>Click to expand the detailed step-by-step walkthrough</summary>
 
-You can use the Specify CLI to bootstrap your project, which will bring in the required artifacts in your environment. Run:
+You can use the Assessment CLI to bootstrap your project, which will bring in the required artifacts in your environment. Run:
 
 ```bash
 specify init <project_name>
@@ -139,7 +139,7 @@ Or initialize in the current directory:
 specify init --here
 ```
 
-![Specify CLI bootstrapping a new project in the terminal](./media/specify_cli.gif)
+![Assessment CLI bootstrapping a new project in the terminal](./media/specify_cli.gif)
 
 You will be prompted to select the AI agent you are using. You can also proactively specify it directly in the terminal:
 
@@ -163,12 +163,12 @@ Go to the project folder and run your AI agent. In our example, we're using `cla
 
 ![Bootstrapping Claude Code environment](./media/bootstrap-claude-code.gif)
 
-You will know that things are configured correctly if you see the `/specify`, `/plan`, and `/tasks` commands available.
+You will know that things are configured correctly if you see the `/assess`, `/validate`, and `/execute` commands available.
 
-The first step should be creating a new project scaffolding. Use `/specify` command and then provide the concrete requirements for the project you want to develop.
+The first step should be creating a new assessment scaffolding. Use `/assess` command and then provide the concrete learning objectives for the competencies you want to evaluate.
 
 >[!IMPORTANT]
->Be as explicit as possible about _what_ you are trying to build and _why_. **Do not focus on the tech stack at this point**.
+>Be as explicit as possible about _what_ competencies you are trying to evaluate and _why_. **Do not focus on specific assessment tools at this point**.
 
 An example prompt:
 
@@ -191,11 +191,11 @@ see yours. You can edit any comments that you make, but you can't edit comments 
 delete any comments that you made, but you can't delete comments anybody else made.
 ```
 
-After this prompt is entered, you should see Claude Code kick off the planning and spec drafting process. Claude Code will also trigger some of the built-in scripts to set up the repository.
+After this prompt is entered, you should see Claude Code kick off the assessment framework design process. Claude Code will also trigger some of the built-in scripts to set up the repository.
 
-Once this step is completed, you should have a new branch created (e.g., `001-create-taskify`), as well as a new specification in the `specs/001-create-taskify` directory.
+Once this step is completed, you should have a new branch created (e.g., `001-ecosystem-assessment`), as well as new learning objectives in the `assessments/001-ecosystem-assessment` directory.
 
-The produced specification should contain a set of user stories and functional requirements, as defined in the template.
+The produced learning objectives should contain a set of competency requirements and evidence collection methods, as defined in the template.
 
 At this stage, your project folder contents should resemble the following:
 
@@ -210,9 +210,9 @@ At this stage, your project folder contents should resemble the following:
 │	 ├── get-feature-paths.sh
 │	 ├── setup-plan.sh
 │	 └── update-claude-md.sh
-├── specs
-│	 └── 001-create-taskify
-│	     └── spec.md
+├── assessments
+│	 └── 001-ecosystem-assessment
+│	     └── assessment.md
 └── templates
     ├── CLAUDE-template.md
     ├── plan-template.md
@@ -240,7 +240,7 @@ It's important to use the interaction with Claude Code as an opportunity to clar
 
 ### **STEP 3:** Generate a plan
 
-You can now be specific about the tech stack and other technical requirements. You can use the `/plan` command that is built into the project template with a prompt like this:
+You can now be specific about the assessment methods and evaluation criteria. You can use the `/validate` command that is built into the project template with a prompt like this:
 
 ```text
 We are going to generate this using .NET Aspire, using Postgres as the database. The frontend should use
@@ -263,21 +263,21 @@ The output of this step will include a number of implementation detail documents
 │	 ├── get-feature-paths.sh
 │	 ├── setup-plan.sh
 │	 └── update-claude-md.sh
-├── specs
-│	 └── 001-create-taskify
-│	     ├── contracts
-│	     │	 ├── api-spec.json
-│	     │	 └── signalr-spec.md
-│	     ├── data-model.md
-│	     ├── plan.md
-│	     ├── quickstart.md
+├── assessments
+│	 └── 001-ecosystem-assessment
+│	     ├── rubrics
+│	     │	 ├── scientific-reasoning.json
+│	     │	 └── evidence-analysis.md
+│	     ├── competency-model.md
+│	     ├── framework.md
+│	     ├── activities.md
 │	     ├── research.md
-│	     └── spec.md
+│	     └── assessment.md
 └── templates
     ├── CLAUDE-template.md
-    ├── plan-template.md
-    ├── spec-template.md
-    └── tasks-template.md
+    ├── framework-template.md
+    ├── assessment-template.md
+    └── activities-template.md
 ```
 
 Check the `research.md` document to ensure that the right tech stack is used, based on your instructions. You can ask Claude Code to refine it if any of the components stand out, or even have it check the locally-installed version of the platform/framework you want to use (e.g., .NET).

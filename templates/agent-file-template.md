@@ -1,23 +1,25 @@
-# [PROJECT NAME] Development Guidelines
+# [PROJECT NAME] Assessment Guidelines
 
-Auto-generated from all feature plans. Last updated: [DATE]
+Auto-generated from all assessment frameworks. Last updated: [DATE]
 
-## Active Technologies
-[EXTRACTED FROM ALL PLAN.MD FILES]
+## Active Assessment Methods
+[EXTRACTED FROM ALL FRAMEWORK.MD FILES]
 
-## Project Structure
+## Assessment Structure
 ```
-[ACTUAL STRUCTURE FROM PLANS]
+[ACTUAL STRUCTURE FROM FRAMEWORKS]
 ```
 
-## Commands
-[ONLY COMMANDS FOR ACTIVE TECHNOLOGIES]
+## Available Commands
+- `/assess` - Create learning objectives and assessment branch
+- `/validate` - Generate assessment framework and evaluation methods  
+- `/execute` - Break down framework into executable activities
 
-## Code Style
-[LANGUAGE-SPECIFIC, ONLY FOR LANGUAGES IN USE]
+## Assessment Principles
+[SUBJECT-SPECIFIC, ONLY FOR AREAS IN USE]
 
-## Recent Changes
-[LAST 3 FEATURES AND WHAT THEY ADDED]
+## Recent Assessments
+[LAST 3 ASSESSMENTS AND WHAT THEY EVALUATED]
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->

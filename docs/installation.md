@@ -15,13 +15,13 @@
 The easiest way to get started is to initialize a new project:
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
+uvx --from git+https://github.com/safaaleigh/spec-kit-education-competency.git specify init <PROJECT_NAME>
 ```
 
 Or initialize in the current directory:
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init --here
+uvx --from git+https://github.com/safaaleigh/spec-kit-education-competency.git specify init --here
 ```
 
 ### Specify AI Agent
@@ -45,9 +45,9 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <project_name
 ## Verification
 
 After initialization, you should see the following commands available in your AI agent:
-- `/specify` - Create specifications
-- `/plan` - Generate implementation plans  
-- `/tasks` - Break down into actionable tasks
+- `/assess` - Create learning objectives
+- `/validate` - Generate assessment frameworks
+- `/execute` - Break down into actionable assessment activities
 
 ## Troubleshooting
 

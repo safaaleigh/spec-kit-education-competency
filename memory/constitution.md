@@ -1,32 +1,21 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Assessment Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Multiple Assessment Modalities (NON-NEGOTIABLE)
+Every assessment must accommodate different learning styles and abilities. No single assessment method can be the sole measure of student competency. Include at least three different ways for students to demonstrate their understanding: performance tasks, portfolio evidence, peer evaluation, self-reflection, or authentic application.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Authentic Assessment Focus
+Every assessment must connect to real-world application of knowledge and skills. Students should be able to see the relevance and transfer value of what they're demonstrating. Avoid artificial or contrived assessment scenarios that exist only in academic contexts.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Student Agency and Voice
+Students must have opportunities for self-assessment, goal-setting, and reflection on their learning journey. Assessment should increase student ownership and metacognitive awareness, not just measure performance. Include student choice in how they demonstrate competency when possible.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Bias Prevention and Equity
+All assessments must be reviewed for cultural, linguistic, and socioeconomic bias. Multiple pathways to success must be available. Accommodations and supports should be built into the design, not added as afterthoughts. Assessment should reveal student strengths, not just deficits.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Growth-Oriented Evaluation
+Assessment must value progress and improvement equally with achievement levels. Include mechanisms to track learning growth over time. Feedback should be actionable and support continued learning, not just judge current performance.
 
 ## [SECTION_2_NAME]
 <!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->

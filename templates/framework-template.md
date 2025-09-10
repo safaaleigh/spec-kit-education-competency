@@ -1,46 +1,46 @@
-# Implementation Plan: [FEATURE]
+# Assessment Framework: [ASSESSMENT NAME]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `[###-assessment-name]` | **Date**: [DATE] | **Learning Objectives**: [link]
+**Input**: Learning objectives from `/assessments/[###-assessment-name]/assessment.md`
 
-## Execution Flow (/plan command scope)
+## Execution Flow (/validate command scope)
 ```
-1. Load feature spec from Input path
-   → If not found: ERROR "No feature spec at {path}"
-2. Fill Technical Context (scan for NEEDS CLARIFICATION)
-   → Detect Project Type from context (web=frontend+backend, mobile=app+api)
-   → Set Structure Decision based on project type
+1. Load learning objectives from Input path
+   → If not found: ERROR "No learning objectives at {path}"
+2. Fill Assessment Context (scan for NEEDS CLARIFICATION)
+   → Detect Assessment Type from context (performance=portfolio+presentation, formative=ongoing+feedback)
+   → Set Structure Decision based on assessment type
 3. Evaluate Constitution Check section below
-   → If violations exist: Document in Complexity Tracking
-   → If no justification possible: ERROR "Simplify approach first"
+   → If violations exist: Document in Equity Tracking
+   → If no justification possible: ERROR "Redesign for accessibility first"
    → Update Progress Tracking: Initial Constitution Check
 4. Execute Phase 0 → research.md
    → If NEEDS CLARIFICATION remain: ERROR "Resolve unknowns"
-5. Execute Phase 1 → contracts, data-model.md, quickstart.md, agent-specific template file (e.g., `CLAUDE.md` for Claude Code, `.github/copilot-instructions.md` for GitHub Copilot, or `GEMINI.md` for Gemini CLI).
+5. Execute Phase 1 → rubrics/, competency-model.md, activities.md, agent-specific template file
 6. Re-evaluate Constitution Check section
    → If new violations: Refactor design, return to Phase 1
    → Update Progress Tracking: Post-Design Constitution Check
-7. Plan Phase 2 → Describe task generation approach (DO NOT create tasks.md)
-8. STOP - Ready for /tasks command
+7. Plan Phase 2 → Describe activity generation approach (DO NOT create activities.md)
+8. STOP - Ready for /execute command
 ```
 
-**IMPORTANT**: The /plan command STOPS at step 7. Phases 2-4 are executed by other commands:
-- Phase 2: /tasks command creates tasks.md
-- Phase 3-4: Implementation execution (manual or via tools)
+**IMPORTANT**: The /validate command STOPS at step 7. Phases 2-4 are executed by other commands:
+- Phase 2: /execute command creates activities.md
+- Phase 3-4: Assessment implementation (manual or via tools)
 
 ## Summary
-[Extract from feature spec: primary requirement + technical approach from research]
+[Extract from learning objectives: primary competencies + assessment approach from research]
 
-## Technical Context
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+## Assessment Context
+**Grade Level/Population**: [e.g., 9th grade, Adult learners, Mixed ages or NEEDS CLARIFICATION]  
+**Subject Area**: [e.g., Biology, Mathematics, Language Arts or NEEDS CLARIFICATION]  
+**Duration**: [e.g., 2 weeks, Semester-long, Single class period or NEEDS CLARIFICATION]  
+**Assessment Methods**: [e.g., Portfolio, Performance task, Peer evaluation or NEEDS CLARIFICATION]  
+**Setting**: [e.g., Classroom, Online, Community-based or NEEDS CLARIFICATION]
+**Assessment Type**: [formative/summative/authentic - determines structure]  
+**Success Criteria**: [domain-specific, e.g., Proficient on state standards, Demonstrates transfer, Shows growth or NEEDS CLARIFICATION]  
+**Constraints**: [domain-specific, e.g., Time limits, Resource availability, Accommodation needs or NEEDS CLARIFICATION]  
+**Scale/Scope**: [domain-specific, e.g., 30 students, District-wide, Individual assessment or NEEDS CLARIFICATION]
 
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
@@ -80,12 +80,12 @@
 ### Documentation (this feature)
 ```
 specs/[###-feature]/
-├── plan.md              # This file (/plan command output)
-├── research.md          # Phase 0 output (/plan command)
-├── data-model.md        # Phase 1 output (/plan command)
-├── quickstart.md        # Phase 1 output (/plan command)
-├── contracts/           # Phase 1 output (/plan command)
-└── tasks.md             # Phase 2 output (/tasks command - NOT created by /plan)
+├── framework.md         # This file (/validate command output)
+├── research.md          # Phase 0 output (/validate command)
+├── competency-model.md  # Phase 1 output (/validate command)
+├── activities.md        # Phase 1 output (/validate command)
+├── rubrics/            # Phase 1 output (/validate command)
+└── execution.md         # Phase 2 output (/execute command - NOT created by /validate)
 ```
 
 ### Source Code (repository root)
