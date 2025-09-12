@@ -63,20 +63,20 @@ jobs:
     - name: Create release package
       run: |
         # Create base package directory structure
-        mkdir -p sdd-package-base
+        mkdir -p assessment-package-base
         
         # Copy common folders to base
         echo "Packaging SDD common components..."
         
         if [ -d "memory" ]; then
-          cp -r memory sdd-package-base/
+          cp -r memory assessment-package-base/
           echo "✓ Copied memory folder ($(find memory -type f | wc -l) files)"
         else
           echo "⚠️ memory folder not found"
         fi
         
         if [ -d "scripts" ]; then
-          cp -r scripts sdd-package-base/
+          cp -r scripts assessment-package-base/
           echo "✓ Copied scripts folder ($(find scripts -type f | wc -l) files)"
         else
           echo "⚠️ scripts folder not found"
@@ -84,10 +84,10 @@ jobs:
         
         # Create Claude Code package
         echo "Creating Claude Code package..."
-        mkdir -p sdd-claude-package
-        cp -r sdd-package-base/* sdd-claude-package/
+        mkdir -p assessment-claude-package
+        cp -r assessment-package-base/* assessment-claude-package/
         if [ -d "agent_templates/claude" ]; then
-          cp -r agent_templates/claude sdd-claude-package/.claude
+          cp -r agent_templates/claude assessment-claude-package/.claude
           echo "✓ Added Claude Code commands ($(find agent_templates/claude -type f | wc -l) files)"
         else
           echo "⚠️ agent_templates/claude folder not found"
@@ -95,18 +95,18 @@ jobs:
         
         # Create Gemini CLI package
         echo "Creating Gemini CLI package..."
-        mkdir -p sdd-gemini-package
-        cp -r sdd-package-base/* sdd-gemini-package/
+        mkdir -p assessment-gemini-package
+        cp -r assessment-package-base/* assessment-gemini-package/
         if [ -d "agent_templates/gemini" ]; then
-          cp -r agent_templates/gemini sdd-gemini-package/.gemini
+          cp -r agent_templates/gemini assessment-gemini-package/.gemini
           # Move GEMINI.md to root for easier access
-          if [ -f "sdd-gemini-package/.gemini/GEMINI.md" ]; then
-            mv sdd-gemini-package/.gemini/GEMINI.md sdd-gemini-package/GEMINI.md
+          if [ -f "assessment-gemini-package/.gemini/GEMINI.md" ]; then
+            mv assessment-gemini-package/.gemini/GEMINI.md assessment-gemini-package/GEMINI.md
             echo "✓ Moved GEMINI.md to root of Gemini package"
           fi
           # Remove empty .gemini folder if it only contained GEMINI.md
-          if [ -d "sdd-gemini-package/.gemini" ] && [ -z "$(find sdd-gemini-package/.gemini -type f)" ]; then
-            rm -rf sdd-gemini-package/.gemini
+          if [ -d "assessment-gemini-package/.gemini" ] && [ -z "$(find assessment-gemini-package/.gemini -type f)" ]; then
+            rm -rf assessment-gemini-package/.gemini
             echo "✓ Removed empty .gemini folder"
           fi
           echo "✓ Added Gemini CLI commands ($(find agent_templates/gemini -type f | wc -l) files)"
@@ -116,11 +116,11 @@ jobs:
         
         # Create GitHub Copilot package
         echo "Creating GitHub Copilot package..."
-        mkdir -p sdd-copilot-package
-        cp -r sdd-package-base/* sdd-copilot-package/
+        mkdir -p assessment-copilot-package
+        cp -r assessment-package-base/* assessment-copilot-package/
         if [ -d "agent_templates/copilot" ]; then
-          mkdir -p sdd-copilot-package/.github
-          cp -r agent_templates/copilot/* sdd-copilot-package/.github/
+          mkdir -p assessment-copilot-package/.github
+          cp -r agent_templates/copilot/* assessment-copilot-package/.github/
           echo "✓ Added Copilot instructions to .github ($(find agent_templates/copilot -type f | wc -l) files)"
         else
           echo "⚠️ agent_templates/copilot folder not found"
@@ -128,18 +128,18 @@ jobs:
         
         # Create archive files for each package
         echo "Creating archive files..."
-        cd sdd-claude-package && zip -r ../spec-kit-template-claude-${{ steps.version.outputs.new_version }}.zip . && cd ..
+        cd assessment-claude-package && zip -r ../assessment-kit-template-claude-${{ steps.version.outputs.new_version }}.zip . && cd ..
         
-        cd sdd-gemini-package && zip -r ../spec-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip . && cd ..
+        cd assessment-gemini-package && zip -r ../assessment-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip . && cd ..
         
-        cd sdd-copilot-package && zip -r ../spec-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip . && cd ..
+        cd assessment-copilot-package && zip -r ../assessment-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip . && cd ..
         
         echo ""
         echo "📦 Packages created:"
-        echo "Claude: $(ls -lh spec-kit-template-claude-*.zip | awk '{print $5}')"
-        echo "Gemini: $(ls -lh spec-kit-template-gemini-*.zip | awk '{print $5}')"
-        echo "Copilot: $(ls -lh spec-kit-template-copilot-*.zip | awk '{print $5}')"
-        echo "Copilot: $(ls -lh sdd-template-copilot-*.zip | awk '{print $5}')"
+        echo "Claude: $(ls -lh assessment-kit-template-claude-*.zip | awk '{print $5}')"
+        echo "Gemini: $(ls -lh assessment-kit-template-gemini-*.zip | awk '{print $5}')"
+        echo "Copilot: $(ls -lh assessment-kit-template-copilot-*.zip | awk '{print $5}')"
+        echo "Copilot: $(ls -lh assessment-template-copilot-*.zip | awk '{print $5}')"
         
     - name: Generate detailed release notes
       run: |
@@ -167,9 +167,9 @@ jobs:
         Updated specification-driven development templates for GitHub Copilot, Claude Code, and Gemini CLI.
         
         Download the template for your preferred AI assistant:
-        - spec-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip
-        - spec-kit-template-claude-${{ steps.version.outputs.new_version }}.zip
-        - spec-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip  
+        - assessment-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip
+        - assessment-kit-template-claude-${{ steps.version.outputs.new_version }}.zip
+        - assessment-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip  
         
         Changes since $LAST_TAG:
         $COMMITS
@@ -182,9 +182,9 @@ jobs:
         VERSION_NO_V=${VERSION_NO_V#v}
         
         gh release create ${{ steps.version.outputs.new_version }} \
-          spec-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip \
-          spec-kit-template-claude-${{ steps.version.outputs.new_version }}.zip \
-          spec-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip \
+          assessment-kit-template-copilot-${{ steps.version.outputs.new_version }}.zip \
+          assessment-kit-template-claude-${{ steps.version.outputs.new_version }}.zip \
+          assessment-kit-template-gemini-${{ steps.version.outputs.new_version }}.zip \
           --title "Spec Kit Templates - $VERSION_NO_V" \
           --notes-file release_notes.md
       env:
